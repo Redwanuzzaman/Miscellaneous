@@ -1,0 +1,9 @@
+Dim speaks, speech
+speaks="Your Note Here"
+set speech=CreateObject("sapi.spvoice")
+with speech
+       Set.voice = .getvoices.item(0)
+       .Volume = 100
+       .Rate = -4
+   end with
+speech.speak speaks
